@@ -1,0 +1,10 @@
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\Content\p1Temp.png
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\OpenTK.dll.config
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\TieOrDye.exe
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\TieOrDye.pdb
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\MonoGame.Framework.dll
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\NVorbis.dll
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\OpenTK.dll
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\obj\x86\Debug\TieOrDye.csprojResolveAssemblyReference.cache
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\obj\x86\Debug\TieOrDye.exe
+E:\2nd Semester\GDAPS2\GDAPS Project\GameProject\TieOrDye\TieOrDye\obj\x86\Debug\TieOrDye.pdb

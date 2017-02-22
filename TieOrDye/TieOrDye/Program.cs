@@ -1,5 +1,9 @@
 ﻿using System;
 
+/*
+TieOrDye Program Class
+*/
+
 namespace TieOrDye
 {
     /// <summary>

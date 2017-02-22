@@ -1,6 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
+
+/*
+TieOrDye Game Class
+*/
 
 namespace TieOrDye
 {
@@ -11,11 +17,26 @@ namespace TieOrDye
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        //Keyboard State Object
+        KeyboardState kbState;
+        //P1's sprite (Temporary)
+        Texture2D p1TempImg;
+        //P1's location attributes
+        float p1PosX;
+        float p1PosY;
+        Vector2 p1Pos;
+        
+
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            //Changes resolution - Default resolution is 800x480 -- This code changes it to 1000x800
+            graphics.PreferredBackBufferWidth = 1000;  
+            graphics.PreferredBackBufferHeight = 800;
+            graphics.ApplyChanges();
         }
 
         /// <summary>
@@ -28,6 +49,10 @@ namespace TieOrDye
         {
             // TODO: Add your initialization logic here
 
+            //P1's initial location
+            p1PosX = 0;
+            p1PosY = 0;
+
             base.Initialize();
         }
 
@@ -39,6 +64,9 @@ namespace TieOrDye
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            //Load temporary p1 image
+            p1TempImg = Content.Load<Texture2D>("p1Temp");
 
             // TODO: use this.Content to load your game content here
         }
@@ -64,6 +92,14 @@ namespace TieOrDye
 
             // TODO: Add your update logic here
 
+            //Checks input per update
+            CheckInput();
+
+            //Update p1 location
+            p1Pos = new Vector2(p1PosX, p1PosY);
+
+
+
             base.Update(gameTime);
         }
 
@@ -77,12 +113,43 @@ namespace TieOrDye
 
             // TODO: Add your drawing code here
 
+            //Start spritebatch
+            spriteBatch.Begin();
+            //Draw p1 at their current position
+            spriteBatch.Draw(p1TempImg, p1Pos, Color.White);
+            spriteBatch.End();
+
             base.Draw(gameTime);
         }
 
+        //Check for player input
         public void CheckInput()
         {
-            //test
+            //Keyboard object
+            KeyboardState kbState = Keyboard.GetState();
+            //WASD - P1 Movement
+            //Currently changes float by 1, can replace the 1 with a movement increment variable
+            //P1 Up
+            if (kbState.IsKeyDown(Keys.W))
+            {
+                p1Pos = new Vector2(p1PosX, p1PosY -= 1);
+            }
+            //P1 Left
+            if (kbState.IsKeyDown(Keys.A))
+            {
+                p1Pos = new Vector2(p1PosX -= 1, p1PosY);
+            }
+            //P1 Down
+            if (kbState.IsKeyDown(Keys.S))
+            {
+                p1Pos = new Vector2(p1PosX, p1PosY += 1);
+            }
+            //P1 Right
+            if (kbState.IsKeyDown(Keys.D))
+            {
+                p1Pos = new Vector2(p1PosX += 1, p1PosY);
+            }
+            //
         }
 
     }
