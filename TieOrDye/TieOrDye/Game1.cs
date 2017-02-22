@@ -79,5 +79,11 @@ namespace TieOrDye
 
             base.Draw(gameTime);
         }
+
+        public void CheckInput()
+        {
+            //test
+        }
+
     }
 }
