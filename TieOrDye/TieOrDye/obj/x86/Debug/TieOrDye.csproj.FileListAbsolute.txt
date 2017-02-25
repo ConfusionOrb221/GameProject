@@ -22,3 +22,14 @@ C:\Users\nate1\Documents\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\N
 C:\Users\nate1\Documents\GameProject\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\OpenTK.dll
 C:\Users\nate1\Documents\GameProject\TieOrDye\TieOrDye\obj\x86\Debug\TieOrDye.csprojResolveAssemblyReference.cache
 >>>>>>> a0e873271d70438e9cba7c94717d251916e336d3
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\obj\x86\Debug\TieOrDye.exe
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\obj\x86\Debug\TieOrDye.pdb
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\Content\p1Temp.png
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\Content\p2Temp.png
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\OpenTK.dll.config
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\TieOrDye.exe
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\TieOrDye.pdb
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\MonoGame.Framework.dll
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\NVorbis.dll
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\bin\DesktopGL\x86\Debug\OpenTK.dll
+C:\Users\Owner\Desktop\GDAPS Game\TieOrDye\TieOrDye\obj\x86\Debug\TieOrDye.csprojResolveAssemblyReference.cache
