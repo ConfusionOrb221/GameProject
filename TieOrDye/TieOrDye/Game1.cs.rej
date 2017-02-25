@@ -1,0 +1,9 @@
+diff a/TieOrDye/TieOrDye/Game1.cs b/TieOrDye/TieOrDye/Game1.cs	(rejected hunks)
+@@ -181,6 +181,7 @@
+             }
+             //Arrow Keys - P2 Movement
+             //P2 Up
++            if (kbState.IsKeyDown(Keys.Up))
+             {
+                 p2Pos = new Vector2(p2PosX, p2PosY -= 1);
+             }

@@ -162,44 +162,24 @@ namespace TieOrDye
             //P1 Up
             if (kbState.IsKeyDown(Keys.W))
             {
-                p1Pos = new Vector2(p1PosX, p1PosY -= 1);
+                p1PosY--; //simplified some of this code which you don't even need to do this vector has a set x and y property which you could use to change the Vector
             }
             //P1 Left
             if (kbState.IsKeyDown(Keys.A))
             {
-                p1Pos = new Vector2(p1PosX -= 1, p1PosY);
+                p1PosX--;
             }
             //P1 Down
             if (kbState.IsKeyDown(Keys.S))
             {
-                p1Pos = new Vector2(p1PosX, p1PosY += 1);
+                p1PosY++;
             }
             //P1 Right
             if (kbState.IsKeyDown(Keys.D))
             {
-                p1Pos = new Vector2(p1PosX += 1, p1PosY);
+                p1PosX++;
             }
-            //Arrow Keys - P2 Movement
-            //P2 Up
-            if (kbState.IsKeyDown(Keys.Up))
-            {
-                p2Pos = new Vector2(p2PosX, p2PosY -= 1);
-            }
-            //P2 Left
-            if (kbState.IsKeyDown(Keys.Left))
-            {
-                p2Pos = new Vector2(p2PosX -= 1, p2PosY);
-            }
-            //P2 Down
-            if (kbState.IsKeyDown(Keys.Down))
-            {
-                p2Pos = new Vector2(p2PosX, p2PosY += 1);
-            }
-            //P2 Right
-            if (kbState.IsKeyDown(Keys.Right))
-            {
-                p2Pos = new Vector2(p2PosX += 1, p2PosY);
-            }
+            //
         }
 
     }
