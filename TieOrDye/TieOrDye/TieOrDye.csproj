@@ -38,6 +38,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Animation.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameBoard.cs" />
     <Compile Include="GameScores.cs" />
@@ -64,6 +65,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
     <Content Include="Content\p1Temp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\p2Temp.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="OpenTK.dll.config">

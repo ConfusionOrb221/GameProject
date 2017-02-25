@@ -8,5 +8,6 @@ namespace TieOrDye
 {
     class Animation: Game1
     {
+        
     }
 }

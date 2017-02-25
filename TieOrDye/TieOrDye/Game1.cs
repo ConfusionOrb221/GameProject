@@ -19,13 +19,25 @@ namespace TieOrDye
         SpriteBatch spriteBatch;
         //Keyboard State Object
         KeyboardState kbState;
+
         //P1's sprite (Temporary)
         Texture2D p1TempImg;
         //P1's location attributes
         float p1PosX;
         float p1PosY;
         Vector2 p1Pos;
-        
+        //Player 1 object
+        Player p1;
+
+        //P2's sprite (Temporary)
+        Texture2D p2TempImg;
+        //P2's location attributes
+        float p2PosX;
+        float p2PosY;
+        Vector2 p2Pos;
+        //Player 2 object
+        Player p2;
+
 
 
         public Game1()
@@ -53,6 +65,16 @@ namespace TieOrDye
             p1PosX = 0;
             p1PosY = 0;
 
+            //P2's initial location
+            p2PosX = 900;
+            p2PosY = 0;
+
+            //P1 Object
+            p1 = new Player(true);
+
+            //P2 Object
+            p2 = new Player(false);
+
             base.Initialize();
         }
 
@@ -67,6 +89,8 @@ namespace TieOrDye
 
             //Load temporary p1 image
             p1TempImg = Content.Load<Texture2D>("p1Temp");
+            //Load temporary p2 image
+            p2TempImg = Content.Load<Texture2D>("p2Temp");
 
             // TODO: use this.Content to load your game content here
         }
@@ -97,8 +121,13 @@ namespace TieOrDye
 
             //Update p1 location
             p1Pos = new Vector2(p1PosX, p1PosY);
-
-
+            //Send p1 location to player class
+            p1.GetPos(p1PosX, p1PosY);
+       
+            //Update p2 location
+            p2Pos = new Vector2(p2PosX, p2PosY);
+            //Send p2 location to player class
+            p2.GetPos(p2PosX, p2PosY);
 
             base.Update(gameTime);
         }
@@ -117,6 +146,7 @@ namespace TieOrDye
             spriteBatch.Begin();
             //Draw p1 at their current position
             spriteBatch.Draw(p1TempImg, p1Pos, Color.White);
+            spriteBatch.Draw(p2TempImg, p2Pos, Color.White);
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -149,7 +179,27 @@ namespace TieOrDye
             {
                 p1Pos = new Vector2(p1PosX += 1, p1PosY);
             }
-            //
+            //Arrow Keys - P2 Movement
+            //P2 Up
+            if (kbState.IsKeyDown(Keys.Up))
+            {
+                p2Pos = new Vector2(p2PosX, p2PosY -= 1);
+            }
+            //P2 Left
+            if (kbState.IsKeyDown(Keys.Left))
+            {
+                p2Pos = new Vector2(p2PosX -= 1, p2PosY);
+            }
+            //P2 Down
+            if (kbState.IsKeyDown(Keys.Down))
+            {
+                p2Pos = new Vector2(p2PosX, p2PosY += 1);
+            }
+            //P2 Right
+            if (kbState.IsKeyDown(Keys.Right))
+            {
+                p2Pos = new Vector2(p2PosX += 1, p2PosY);
+            }
         }
 
     }
